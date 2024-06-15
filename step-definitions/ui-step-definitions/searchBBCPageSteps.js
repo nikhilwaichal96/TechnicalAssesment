@@ -1,5 +1,5 @@
 const { Given, Then, When } = require('@cucumber/cucumber');
-const SearchBBCPage = require('../page-objects/SearchBBCPage.js');
+const SearchBBCPage = require('../../page-objects/SearchBBCPage.js');
 let searchBBCPage;
 
 When('I search for {string} article', async function (articleName) {

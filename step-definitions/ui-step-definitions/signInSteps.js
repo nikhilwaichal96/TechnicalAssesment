@@ -1,5 +1,5 @@
 const { Given, Then, When } = require('@cucumber/cucumber');
-const SignInPage = require('../page-objects/LoginPage.js');
+const SignInPage = require('../../page-objects/LoginPage.js');
 const { expect } = require('playwright/test');
 let signInPage;
 

@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "test": "cucumber-js"
+    "test:ui": "cucumber-js -c cucumber-ui.js",
+    "test:api": "cucumber-js -c cucumber-api.js"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^10.8.0"

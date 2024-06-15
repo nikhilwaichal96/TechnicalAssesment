@@ -1,8 +1,8 @@
 module.exports = {
     default: {
       require: [
-        './step-definitions/*.js',
-        'library/hooks.js',
+        'step-definitions/api-step-definitions/*.js',
+        'library/api-hooks.js',
         'library/common.js',
       ],
       format: [
@@ -12,7 +12,8 @@ module.exports = {
         "cucumber-console-formatter",
         `html:./report/report.html`,
         `json:./report/report.json`,
-      ]
+      ],
+      paths: ['features/api/*.feature']
     }
   };
   

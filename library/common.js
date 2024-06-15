@@ -1,5 +1,5 @@
 const { setWorldConstructor} = require('@cucumber/cucumber');
-const { chromium } = require('playwright');
+const { chromium,request } = require('playwright/test');
 var {setDefaultTimeout} = require('@cucumber/cucumber');
 setDefaultTimeout(100 * 1000);
 class CustomWorld {
@@ -15,6 +15,14 @@ class CustomWorld {
     await this.page.close();
     await this.context.close();
     await this.browser.close();
+  }
+
+  async openApiContext(){
+    this.apiContext = await request.newContext();
+    
+  }
+  async disposeApiContext(){
+    await this.apiContext.dispose();
   }
 }
 

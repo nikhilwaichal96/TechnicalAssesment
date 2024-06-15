@@ -1,6 +1,6 @@
 // scoresAndFixture.js
 const { Given, Then, When } = require('@cucumber/cucumber');
-const ScoresAndFixturePage = require('../page-objects/ScoresAndFixturePage');
+const ScoresAndFixturePage = require('../../page-objects/ScoresAndFixturePage');
 
 let scoresAndFixturePage;
 
