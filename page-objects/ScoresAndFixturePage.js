@@ -14,8 +14,13 @@ class ScoresAndFixturePage {
         } 
         return teams;
     }
+
     async clickOnSearchBBCInputBox(){
       await this.page.locator(`//div[@aria-label='Search BBC']`).click();
+    }
+    
+    async clickOnSignInLink(){
+      await this.page.locator(`a[class*='AccountLink']`).click()
     }
 }
 

@@ -20,3 +20,7 @@ Then('I should be able to see all team names with a match today',async function(
 When('I click on the search BBC input box',async function(){
     await scoresAndFixturePage.clickOnSearchBBCInputBox();
 })
+
+Given('I click on sign in link',async function(){
+    await scoresAndFixturePage.clickOnSignInLink();
+})
