@@ -1,7 +1,7 @@
 module.exports = {
     default: {
       require: [
-        './step-definitions/*.ts',
+        './step-definitions/*.js',
         'library/hooks.js',
         'library/common.js',
       ],
