@@ -14,6 +14,9 @@ class ScoresAndFixturePage {
         } 
         return teams;
     }
+    async clickOnSearchBBCInputBox(){
+      await this.page.locator(`//div[@aria-label='Search BBC']`).click();
+    }
 }
 
 module.exports = ScoresAndFixturePage;

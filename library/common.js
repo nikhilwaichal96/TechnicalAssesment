@@ -1,9 +1,9 @@
-const { setWorldConstructor,setDefaultTimeout  } = require('@cucumber/cucumber');
+const { setWorldConstructor} = require('@cucumber/cucumber');
 const { chromium } = require('playwright');
-
+var {setDefaultTimeout} = require('@cucumber/cucumber');
+setDefaultTimeout(100 * 1000);
 class CustomWorld {
   async openBrowser() {
-    setDefaultTimeout(60 * 1000); 
     this.browser = await chromium.launch({headless:false});
     this.context = await this.browser.newContext();
     this.page = await this.context.newPage();
