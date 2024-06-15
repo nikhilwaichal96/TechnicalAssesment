@@ -4,4 +4,3 @@ Feature: : As a business user, I would like to make a record of all teams which 
 
     Given I open the scores & fixtures page
     Then I should be able to see all team names with a match today
-    
